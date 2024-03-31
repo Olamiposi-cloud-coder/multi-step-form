@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Multi-step form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <section class="form-container">
+        <!-- Sidebar start -->
+        <aside class="sidebar">
+          <article class="step_one">
+            <span>1</span>
+            <p>step 1</p>
+            <h2>Your info</h2>
+          </article>
+          <article class="step_two">
+            <span>2</span>
+            <p>step 2</p>
+            <h2>Select plan</h2>
+          </article>
+          <article class="step_three">
+            <span>3</span>
+            <p>step 3</p>
+            <h2>Add-ons</h2>
+          </article>
+          <article class="step_four">
+            <span>4</span>
+            <p>step 4</p>
+            <h2>Summary</h2>
+          </article>
+        </aside>
+        <!-- Sidebar end -->
+
+        <!-- Step 1 start -->
+        <section class="step-one_main">
+          <h1 class="step-one_heading">Personal info</h1>
+          <p class="step-one_text">
+            Please provide your name, email address, and phone number.
+          </p>
+
+          <form>
+            <label for="text">Name</label>
+            <input
+              type="text"
+              name="text"
+              id="text"
+              placeholder="e.g. Stephen King"
+            />
+
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="e.g. stephenking@lorem.com"
+            />
+
+            <label for="number">Phone Number</label>
+            <input
+              type="number"
+              name="number"
+              id="number"
+              placeholder="e.g. +1 234 567 890"
+            />
+          </form>
+
+          <button class="btn-one">Next Step</button>
+        </section>
+        <!-- Step 1 end -->
+
+        <!-- Step 2 start -->
+        <section class="step-two_main">
+          <h2 class="step-two_heading">Select your plan</h2>
+          <p class="step-two_text">
+            You have the option of monthly or yearly billing.
+          </p>
+
+          <article class="plans">
+            <div class="arcade">
+              <img src="./assets/images/icon-arcade.svg" alt="arcade icon" />
+              <p class="arcade-text">Arcade</p>
+              <p class="plan">$9/mo</p>
+            </div>
+            <div class="arcade">
+              <img
+                src="./assets/images/icon-advanced.svg"
+                alt="Advanced icon"
+              />
+              <p class="arcade-text">Advanced</p>
+              <p class="plan">$12/mo</p>
+            </div>
+            <div class="arcade">
+              <img src="./assets/images/icon-pro.svg" alt="pro icon" />
+              <p class="arcade-text">Pro</p>
+              <p class="plan">$15/mo</p>
+            </div>
+          </article>
+
+          <article class="change-plan">Monthly Yearly</article>
+
+          <article class="btns">
+            <button class="step-two_btn_one">Go Back</button>
+            <button class="step-two_btn_two">Next Step</button>
+          </article>
+        </section>
+        <!-- Step 2 end -->
+
+        <section class="step-three_main">
+          <h2 class="step-three_heading">Pick add-ons</h2>
+          <p class="step-three_text">
+            Add-ons help enhance your gaming experience.
+          </p>
+
+          <div class="custom-checkbox">
+            <input
+              id="bordered-checkbox-1"
+              type="checkbox"
+              value=""
+              name="bordered-checkbox"
+            />
+            <label for="bordered-checkbox-1">Default checkbox</label>
+          </div>
+          <div class="custom-checkbox">
+            <input
+              checked
+              id="bordered-checkbox-2"
+              type="checkbox"
+              value=""
+              name="bordered-checkbox"
+            />
+            <label for="bordered-checkbox-2">Checked state</label>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- Step 3 start -->
+
+    Online service Access to multiplayer games +$1/mo Larger storage Extra 1TB
+    of cloud save +$2/mo Customizable Profile Custom theme on your profile
+    +$2/mo Go Back Next Step
+
+    <!-- Step 3 end -->
+
+    <!-- Step 4 start -->
+
+    Finishing up Double-check everything looks OK before confirming.
+
+    <!-- Dynamically add subscription and add-on selections here -->
+
+    Total (per month/year) Go Back Confirm
+
+    <!-- Step 4 end -->
+
+    <!-- Step 5 start -->
+
+    Thank you! Thanks for confirming your subscription! We hope you have fun
+    using our platform. If you ever need support, please feel free to email us
+    at support@loremgaming.com.
+
+    <!-- Step 5 end -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
