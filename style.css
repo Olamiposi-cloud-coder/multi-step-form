@@ -31,6 +31,10 @@ body {
   min-height: 100vh;
 }
 
+.hidden {
+  display: none;
+}
+
 .form {
   width: 900px;
   background-color: var(--White);
@@ -106,7 +110,7 @@ body {
 .heading .exp {
   color: var(--Cool-gray);
 }
-.next-stp {
+.next-step {
   margin-top: auto;
   margin-bottom: 2rem;
   margin-left: auto;
@@ -116,6 +120,10 @@ body {
   background-color: var(--Marine-blue);
   color: white;
   cursor: pointer;
+}
+
+.next-step:hover {
+  opacity: 0.9;
 }
 /* STEP 1 */
 .step-1 {
@@ -145,6 +153,12 @@ body {
 .step-1 form input:focus {
   outline-color: var(--Purplish-blue);
 }
+
+.step-1 form input:hover {
+  cursor: pointer;
+  outline-color: var(--Purplish-blue);
+}
+
 form input::placeholder {
   font-weight: 500;
   font-size: 1rem;
@@ -179,6 +193,11 @@ form .error {
   align-items: flex-start;
   justify-content: space-between;
 }
+
+.plan-card:hover {
+  border: 2px solid var(--Purplish-blue);
+}
+
 .plan-info {
   display: flex;
   flex-direction: column;
@@ -203,7 +222,7 @@ form .error {
   align-items: center;
   justify-content: space-between;
 }
-.prev-stp {
+.prev-step {
   margin-top: auto;
   margin-bottom: 2rem;
   border: none;
@@ -213,6 +232,10 @@ form .error {
   border-radius: 7px;
   color: var(--Cool-gray);
   cursor: pointer;
+}
+
+.prev-step:hover {
+  color: var(--Marine-blue);
 }
 /* STEP 3 */
 .step-3 {
