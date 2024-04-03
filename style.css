@@ -106,9 +106,12 @@ body {
 }
 .heading .title {
   color: var(--Marine-blue);
+  font-size: 32px;
+  font-weight: 900;
 }
 .heading .exp {
   color: var(--Cool-gray);
+  line-height: 1.5rem;
 }
 .next-step {
   margin-top: auto;
@@ -129,6 +132,7 @@ body {
 .step-1 {
   display: flex;
   width: 90%;
+  padding: 0 5rem;
 }
 .step-1 form {
   display: flex;
@@ -173,7 +177,8 @@ form .error {
 /* STEP 2 */
 .step-2 {
   display: none;
-  width: 90%;
+  width: 60%;
+  padding: 0 5rem 0 1rem;
 }
 .step-2 form {
   display: flex;
@@ -240,7 +245,8 @@ form .error {
 /* STEP 3 */
 .step-3 {
   display: none;
-  width: 80%;
+  width: 90%;
+  padding: 0 5rem;
 }
 .step-3 form {
   display: flex;
@@ -290,7 +296,8 @@ form .error {
 /* STEP 4 */
 .step-4 {
   display: none;
-  width: 80%;
+  width: 90%;
+  padding: 0 5rem;
 }
 .selection-box {
   display: flex;
@@ -299,8 +306,9 @@ form .error {
   flex: 1;
 }
 .selection-container {
-  background-color: var(--Magnolia);
-  padding: 1.5rem;
+  background-color: var(--Alabaster);
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
 }
 .selected {
   border: 2px solid var(--Purplish-blue);
@@ -313,15 +321,24 @@ form .error {
   color: var(--Marine-blue);
   font-weight: 700;
 }
+
+.selected-plan .plan-name span {
+  display: block;
+}
+
+.addons {
+  padding: 1rem 0;
+}
+
 .selected-addon {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 0;
   color: var(--Cool-gray);
+  padding: 0.5rem 0;
   font-weight: 500;
   font-size: 0.9rem;
 }
-.selected-addon .servic-price {
+.selected-addon .service-price {
   color: var(--Marine-blue);
 }
 .total {
@@ -335,17 +352,39 @@ form .error {
   color: var(--Purplish-blue);
   font-size: 1.2rem;
 }
+
+.btns .confirm {
+  margin-top: auto;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 7px;
+  background-color: var(--Purplish-blue);
+  color: white;
+  cursor: pointer;
+}
+
+.btns .confirm:hover {
+  opacity: 0.9;
+}
+
 /* step 5 */
 .success {
   display: none;
   align-items: center;
-  width: 90%;
+  width: 100%;
+  padding: 0 5rem;
   text-align: center;
   justify-content: center;
   margin: auto;
 }
 .success button {
   display: none;
+}
+
+.success .exp {
+  margin-top: 10px;
 }
 /* SWITCH classes */
 .switcher {
